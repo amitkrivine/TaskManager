@@ -1,0 +1,91 @@
+/* used a mix of Bootstrap and CSS --> was told this is allowed in the project kickoff lesson :) */
+/* used Bootstrap's breakpoint abbreviation instead of @media queries */
+:root {
+    --footer-h: 64px;
+}     
+
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Quicksand", sans-serif;
+    color: #002a32;
+}
+
+main {
+    flex: 1;
+    padding-bottom: 16px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "Sigmar One", sans-serif;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.site-footer {
+    position: static;
+    height: var(--footer-h);
+    width: 100%;
+    background: #868e96;
+    font-size: 0.8rem;
+    color: #fff;  
+}
+
+/* list becomes scrollable */
+#taskList {
+    max-height: calc(100dvh - var(--footer-h) - 200px);
+    overflow: auto;
+}
+
+/* small screen list heigh adjustment */
+@media (width < 768px) {
+    #taskList {
+        max-height: calc(100dvh - var(--footer-h) - 480px);
+    }
+}
+
+.taskListRow {
+    display: flex;
+    flex-direction: row;
+}
+
+/* hovers and transitions */
+#addBtn {
+    transition: transform 600ms;
+}
+
+#addBtn:hover {
+    transform: translateY(-0.1rem);
+    transition: transform 250ms;
+}
+
+#allBtnLabel, #activeBtnLabel, #completeBtnLabel {
+    transition: all 0.1s ease;
+}
+
+#allBtnLabel:hover, #activeBtnLabel:hover, #completeBtnLabel:hover {
+    background-color: #bbf2f9;
+    color: #000;
+}
+
+#allBtnLabel:active, #activeBtnLabel:active, #completeBtnLabel:active {
+    background-color: #0DCAF0;
+    color: #fff;
+}
+
+#sortBtnLabel:hover {
+    background-color: #c28cd7;
+    border: 1px, solid, #8640a1;
+    color: #fff;
+}
+#sortBtnLabel:active {
+    background-color: #c28cd7;
+    border: 1px, solid, #8640a1;
+    color: #000;
+}
