@@ -39,16 +39,16 @@ h1 {
 
 /* list becomes scrollable */
 #taskList {
-    max-height: calc(100dvh - var(--footer-h) - 200px);
+    max-height: calc(100dvh - var(--footer-h) - 180px);
     overflow: auto;
 }
 
 /* small screen list heigh adjustment */
-@media (width < 768px) {
+/* @media (width < 768px) {
     #taskList {
         max-height: calc(100dvh - var(--footer-h) - 480px);
     }
-}
+} */
 
 .taskListRow {
     display: flex;
