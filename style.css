@@ -69,23 +69,12 @@ h1 {
     transition: all 0.1s ease;
 }
 
-#allBtnLabel:hover, #activeBtnLabel:hover, #completeBtnLabel:hover {
+#allBtnLabel:hover, #activeBtnLabel:hover, #completeBtnLabel:hover, #sortBtnLabel:hover {
     background-color: #bbf2f9;
     color: #000;
 }
 
-#allBtnLabel:active, #activeBtnLabel:active, #completeBtnLabel:active {
+#allBtnLabel:active, #activeBtnLabel:active, #completeBtnLabel:active, #sortBtnLabel:active {
     background-color: #0DCAF0;
     color: #fff;
-}
-
-#sortBtnLabel:hover {
-    background-color: #c28cd7;
-    border: 1px, solid, #8640a1;
-    color: #fff;
-}
-#sortBtnLabel:active {
-    background-color: #c28cd7;
-    border: 1px, solid, #8640a1;
-    color: #000;
 }

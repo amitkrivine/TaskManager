@@ -93,8 +93,8 @@ function renderTasks() {
             <div data-id="${task.id}" class="col-1 deleteBtn"><i class="fa-solid fa-trash-can"></i></div>`;   
         } else {
             taskElement.innerHTML = 
-            `<div class="col-12 col-sm-7 text-start text-secondary text-decoration-line-through">${task.text}</div>
-            <div class="col-9 col-sm-3 text-start text-secondary">${formatDate(task.dueDate)}</div>
+            `<div class="col-12 col-sm-7 text-start text-secondary text-decoration-line-through opacity-50">${task.text}</div>
+            <div class="col-9 col-sm-3 text-start text-secondary opacity-50">${formatDate(task.dueDate)}</div>
             <div data-id="${task.id}" class="col-1 completeBtn"><i class="fa-solid fa-check"></i></div>
             <div data-id="${task.id}" class="col-1 deleteBtn"><i class="fa-solid fa-trash-can"></i></div>`;              
         }
